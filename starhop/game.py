@@ -17,9 +17,8 @@ class Game:
         self.best = highscore.load()
         self._new_best = False
 
-    def run(self, character=config.DEFAULT_CHARACTER):
+    def run(self):
         """Play rounds until the user quits to the menu or the camera fails."""
-        self.renderer.set_character(character)
         self.audio.start.play()
         try:
             while self._play_round() and self._game_over_screen():

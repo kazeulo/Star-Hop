@@ -12,9 +12,8 @@ def main():
     tracker = FaceTracker(config.CAMERA_INDEX)
     try:
         game = Game(tracker, Audio())
-        character = config.DEFAULT_CHARACTER
-        while (character := show_menu(character)) is not None:
-            game.run(character)
+        while show_menu():
+            game.run()
     finally:
         tracker.release()
         pygame.quit()

@@ -9,8 +9,7 @@ SOUNDS = ASSETS / "sounds"
 SPRITES = IMG / "sprites"
 FACE_MODEL = ROOT / "models" / "face_detection_yunet_2023mar.onnx"
 
-CHARACTERS = ("cyan", "holo", "lilac", "pink")
-DEFAULT_CHARACTER = "pink"
+CHARACTER = "pink"  # sprite set: assets/img/sprites/player_<CHARACTER>_*.png
 
 GAME_TITLE = "Star Hop"
 TITLE_LINES = ("STAR HOP", "F A C E   J U M P")  # menu logo: big line, spaced subtitle

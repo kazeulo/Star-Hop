@@ -44,14 +44,9 @@ class Renderer:
         self.scale = scale
         self._platform = _load_sprite("platform_normal.png",
                                       self._size(PLATFORM.width, PLATFORM.height))
-        self._poses = {}
-        self.set_character(config.DEFAULT_CHARACTER)
-
-    def set_character(self, name):
-        """Load the front/stand/jump sprites of one band member."""
         size = self._size(PLAYER.width, PLAYER.height)
         self._poses = {
-            pose: _load_sprite(f"player_{name}_{pose}.png", size)
+            pose: _load_sprite(f"player_{config.CHARACTER}_{pose}.png", size)
             for pose in ("front", "stand_left", "stand_right", "jump_left", "jump_right")
         }
 

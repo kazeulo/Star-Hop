@@ -29,7 +29,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-Pick a member on the menu, then move your head left and right to steer. `P` pauses, `Q` returns to the menu, and `R`/Space retries after game over.
+Click PLAY (or press Enter) on the menu, then move your head left and right to steer. `P` pauses, `Q` returns to the menu, and `R`/Space retries after game over.
 
 Sprites live in `assets/img/sprites/` (several unused ones, such as enemies, items and special platforms, are ready for future features).
 
